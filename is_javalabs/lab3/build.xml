@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="build" name="Lab3">
+    <description>Lab3. Java RMI</description>  
+
+    <property name="src.dir" location="src"/>
+    <property name="build.dir" location="build"/>
+    <property name="lib.dir" location="lib"/>
+    <property name="dist.dir" location="dist"/>
+    <property name="main.server.class" value="gr7372.turkin.lab3.server.Main"/>
+    <property name="main.client.class" value="gr7372.turkin.lab3.client.Main"/>
+    <property name="dest.server.name" value="server"/>
+    <property name="dest.client.name" value="client"/>
+    <property name="dest.intf.name" value="intf"/>
+
+	<path id="classpath">
+		<pathelement location="${build.dir}"/>
+		<path id="libs">
+			<fileset dir="${lib.dir}">
+				<include name="*.jar"/>
+			</fileset>
+		</path>
+	</path> 
+
+
+    <target name="init">
+        <tstamp/>
+        <mkdir dir="${build.dir}"/>
+        <mkdir dir="${dist.dir}"/>
+    </target>
+
+    <target name="compile" depends="init">
+        <javac srcdir="${src.dir}" 
+			   destdir="${build.dir}"
+               includeantruntime="false">
+			<classpath refid="libs"/>
+		</javac>
+    </target>
+
+    <target name="build" depends="compile">
+		<manifestclasspath property="jar.server.classpath" jarfile="${build.dir}/${dest.server.name}.jar">
+			  <classpath refid="classpath" />
+		</manifestclasspath>
+		<manifestclasspath property="jar.client.classpath" jarfile="${build.dir}/${dest.client.name}.jar">
+			  <classpath refid="classpath" />
+		</manifestclasspath>
+		<jar destfile="${dist.dir}/${dest.server.name}.jar" basedir="${build.dir}" excludes="**/client/** **/intf/**">
+			
+            <manifest>
+                <attribute name="Built-By" value="${user.name}"/>
+                <attribute name="Main-Class" value="${main.server.class}"/>
+                <attribute name="Class-Path" value="${jar.server.classpath} ${dest.intf.name}.jar"/>
+            </manifest>
+        </jar>
+		<jar destfile="${dist.dir}/${dest.client.name}.jar" basedir="${build.dir}" excludes="**/server/** **/intf/**">
+			
+            <manifest>
+                <attribute name="Built-By" value="${user.name}"/>
+                <attribute name="Main-Class" value="${main.client.class}"/>
+                <attribute name="Class-Path" value="${jar.server.classpath} ${dest.intf.name}.jar"/>
+            </manifest>
+        </jar>
+		<jar destfile="${dist.dir}/${dest.intf.name}.jar" basedir="${build.dir}" excludes="**/server/** **/client/**">
+            <manifest>
+                <attribute name="Built-By" value="${user.name}"/>
+            </manifest>
+        </jar>
+    </target>
+
+    <target name="clean">
+        <delete dir="${build.dir}"/>
+        <delete dir="${dist.dir}"/>
+    </target>
+
+
+	<target name="test" description="Tests" depends="compile">
+		<junit>
+			<classpath refid="classpath"/>
+			<formatter type="brief" usefile="false"/>
+			<batchtest>
+				<fileset dir="${build.dir}">
+					<include name="**/server/Tests.class"/>
+				</fileset>
+			</batchtest>
+		</junit>
+	</target>
+
+	
+</project>
