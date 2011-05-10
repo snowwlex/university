@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/4/trunk/university/oop_labs/5-tpl-array/cppUnitLite
+END
+TestResult.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/4/trunk/university/oop_labs/5-tpl-array/cppUnitLite/TestResult.cpp
+END
+Test.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/4/trunk/university/oop_labs/5-tpl-array/cppUnitLite/Test.cpp
+END
+TestResultStdErr.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/4/trunk/university/oop_labs/5-tpl-array/cppUnitLite/TestResultStdErr.cpp
+END
+ExceptionHandling.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/4/trunk/university/oop_labs/5-tpl-array/cppUnitLite/ExceptionHandling.cpp
+END
+TestResult.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/4/trunk/university/oop_labs/5-tpl-array/cppUnitLite/TestResult.h
+END
+Test.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/4/trunk/university/oop_labs/5-tpl-array/cppUnitLite/Test.h
+END
+TestResultStdErr.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/4/trunk/university/oop_labs/5-tpl-array/cppUnitLite/TestResultStdErr.h
+END
+TestHarness.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/4/trunk/university/oop_labs/5-tpl-array/cppUnitLite/TestHarness.h
+END
+ExceptionHandling.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/4/trunk/university/oop_labs/5-tpl-array/cppUnitLite/ExceptionHandling.h
+END
+TestRegistry.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/4/trunk/university/oop_labs/5-tpl-array/cppUnitLite/TestRegistry.cpp
+END
+Failure.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/4/trunk/university/oop_labs/5-tpl-array/cppUnitLite/Failure.h
+END
+TestRegistry.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/4/trunk/university/oop_labs/5-tpl-array/cppUnitLite/TestRegistry.h
+END

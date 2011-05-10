@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/4/trunk/university/oop_labs/3-collections/data/iterators
+END
+BinaryTreeIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/4/trunk/university/oop_labs/3-collections/data/iterators/BinaryTreeIterator.cpp
+END
+LinkedListIterator.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/4/trunk/university/oop_labs/3-collections/data/iterators/LinkedListIterator.h
+END
+BinaryTreeIterator.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/4/trunk/university/oop_labs/3-collections/data/iterators/BinaryTreeIterator.h
+END
+LinkedListIterator.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/4/trunk/university/oop_labs/3-collections/data/iterators/LinkedListIterator.cpp
+END
