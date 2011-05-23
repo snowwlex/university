@@ -1,7 +1,0 @@
-<RCC>
-    <qresource prefix="/images">
-        <file>button.gif</file>
-        <file>label.gif</file>
-        <file>lineedit.gif</file>
-    </qresource>
-</RCC>
