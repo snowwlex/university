@@ -1,0 +1,28 @@
+Изучение web-сервисов
+
+Цель: изучить web-сервисы, написание как серверной части, так и клиентской.
+
+Задание
+
+Серверная часть
+
+Описать какой-либо сервис, который делает простейшие операции над некой сущностью. Например, сервис калькулятора комплексных числе может быть описан следующим контрактом: 
+
+public class ComplexNumber {
+	double re;
+	double im; 
+}
+
+public interface ComplexNumberCalculator {
+	ComplexNumber sum(ComplexNumber a, ComplexNumber b);
+	ComplexNumber div(ComplexNumber a, ComplexNumber b);
+	ComplexNumber prod(ComplexNumber a, ComplexNumber b);
+	ComplexNumber sub(ComplextNumber a, ComplexNumber b);
+}
+Для этого сервиса необходимо сделать тестирование в SoapUI. Тестирование может быть самым простым - достаточно по одному вызову на каждый метод. Файл тестирования прикладывается к программе
+
+
+
+Клиентская часть
+
+Сделать простейшего клиента на основе разработаного сервиса. Клиент не обязательно должен быть сколько нибудь функциональным. Вполне функция main с вызовом методов.
